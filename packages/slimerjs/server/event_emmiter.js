@@ -7,10 +7,10 @@ var syncExecFile = Meteor._wrapAsync(execFile);
 var slimerBin = slimerjs.path;
 
 
-runSlimer = function (scriptPath) {
+runSlimer = function (scriptPath, url) {
   var future = new Future();
   
-  execFile(slimerBin, [scriptPath], function(err, stdout, stderr) {
+  execFile('xvfb-run', [slimerBin, scriptPath, url], function(err, stdout, stderr) {
     future.return(stdout);
   });
   

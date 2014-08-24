@@ -17,11 +17,19 @@
 </template>
 
 <template name="checks">
-  {{#each checks}}
-    <ul>
-      {{#each result}}
-        <li>{{this}}</li>    
-      {{/each}}
-    </ul>
-  {{/each}}
+  <div>
+    {{#each checks}}
+      <ul>
+        {{#each params}}
+          {{> utm}}
+        {{/each}}
+      </ul>
+    {{/each}}
+  </div>
+</template>
+
+<template name="utm">
+  <li>
+    {{this.description}}: {{this.value}} 
+  </li>
 </template>

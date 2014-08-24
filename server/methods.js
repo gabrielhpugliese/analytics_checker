@@ -23,9 +23,9 @@ Meteor.methods({
   fetchUrl: function (url) {
     check(url, String);
 
-    var script = '/tmp/app2.js';
+    var script = '/home/gabra/teste/slimer/meteorapp/private/slimer_script.js';
 
-    var result = runSlimer(script);
+    var result = runSlimer(script, url);
     result = result.split('\n');
 
     _.each(result, function (resultString, i) {

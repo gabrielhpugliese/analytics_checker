@@ -15,7 +15,7 @@ Template.code.events({
 Template.checks.helpers({
   checks: function () {
     return Checks.find();
-  } 
+  }
 });
 
 Template.url.events({
