@@ -34,11 +34,8 @@ Meteor.methods({
       }
 
       var jsonResult = slimerToJSON(resultString);
-      var doc = _.extend(jsonResult, {
-        when: new Date()
-      });
 
-      Checks.insert(doc);
+      Checks.insert(jsonResult);
     });
 
 

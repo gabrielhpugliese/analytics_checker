@@ -6,11 +6,6 @@
   {{> checks}}
 </body>
 
-<template name="code">
-  <textarea id="" name="" cols="30" rows="10"></textarea>
-  <button>Save</button>
-</template>
-
 <template name="url">
   <input type="text">
   <button>Go</button>
@@ -19,13 +14,21 @@
 <template name="checks">
   <div>
     {{#each checks}}
+      {{> urlInfo}}
       <ul>
-        {{#each params}}
+        {{#each this.params}}
           {{> utm}}
         {{/each}}
       </ul>
     {{/each}}
   </div>
+</template>
+
+<template name="urlInfo">
+  <ul>
+    <li>When: {{this.time}}</li>
+    <li>Url: {{this.url}}</li>
+  </ul>
 </template>
 
 <template name="utm">

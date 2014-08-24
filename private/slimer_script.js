@@ -5,7 +5,7 @@
 
   page.onResourceRequested = function (requestData, networkRequest) {
     if (/utm\.gif/g.test(requestData.url)) {
-      console.log('Requested (#' + requestData.id + '): ' + JSON.stringify(requestData));
+      console.log(JSON.stringify(requestData));
     }
   };
 

@@ -10,7 +10,7 @@ UTMParser = function (rawParams) {
   this.rawParams = rawParams;
   this.parsedParams = this._parseParams(rawParams);
   this.utmDict = {
-    "utmac": "Account ID (e.g. UA-123­456-1)",
+    "utmac": "Account ID",
     "utmcc": "Analytics Cookie string",
     "utmcn": "New campaign visit?",
     "utmcr": "Repeat campaign visit?",
@@ -18,13 +18,13 @@ UTMParser = function (rawParams) {
     "utmhn": "Hostname",
     "utmp": "Page path",
     "utmr": "Full referral URL",
-    "utmcs": "Character set (e.g. ISO-88­59-1)",
+    "utmcs": "Character set",
     "utmfl": "Flash version",
     "utmip": "IP address",
-    "utmje": "Java enabled? (1 = yes, 0 = no)",
-    "utmsc": "Screen colour depth (e.g. 24-bit)",
+    "utmje": "Java enabled?",
+    "utmsc": "Screen colour depth",
     "utmsr": "Screen resolution",
-    "utmul": "Language code (e.g. en-us)",
+    "utmul": "Language code",
     "utmvp": "Viewport resolution",
     "utme": "Extensible parameter",
     "utmni": "Non-in­ter­action event",
@@ -41,13 +41,13 @@ UTMParser = function (rawParams) {
     "utmipr": "Product price",
     "utmiqt": "Quantity",
     "utmiva": "Product category / variation",
-    "utmsa": "Social action (e.g. 'share', 'tweet')",
-    "utmsid": "Social destin­ation (optional)",
+    "utmsa": "Social action",
+    "utmsid": "Social destination (optional)",
     "utmsn": "Social network name",
     "utmhid": "Hit ID, random number",
     "utmn": "Random ID to prevent gif caching",
-    "utms": "Requests made this session (max. 500)",
-    "utmt": "Request type (e.g. 'event', 'tran' etc...)",
+    "utms": "Requests made this session",
+    "utmt": "Request type",
     "utmu": "Client usage / Error data (encoded)",
     "utmvid": "Visitor ID",
     "utmwv": "Tracking code version",
@@ -56,7 +56,8 @@ UTMParser = function (rawParams) {
     "utmccn": "Campaign name",
     "utmcmd": "Campaign medium",
     "utmctr": "Campaign term / key phrase",
-    "utmcct": "Campaign content"
+    "utmcct": "Campaign content",
+    "utmht": "Timestamp"
   };
 };
 
