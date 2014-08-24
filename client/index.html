@@ -1,0 +1,27 @@
+<head>
+</head>
+
+<body>
+  {{> url}}
+  {{> checks}}
+</body>
+
+<template name="code">
+  <textarea id="" name="" cols="30" rows="10"></textarea>
+  <button>Save</button>
+</template>
+
+<template name="url">
+  <input type="text">
+  <button>Go</button>
+</template>
+
+<template name="checks">
+  {{#each checks}}
+    <ul>
+      {{#each result}}
+        <li>{{this}}</li>    
+      {{/each}}
+    </ul>
+  {{/each}}
+</template>

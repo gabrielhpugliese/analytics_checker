@@ -1,0 +1,30 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "power-queue": {}
+    },
+    "packages": {
+      "power-queue": {
+        "git": "https://github.com/CollectionFS/Meteor-power-queue.git",
+        "tag": "v0.9.9",
+        "commit": "567d3905784a8be6aacfbb69d477003ba9b5c4b5"
+      },
+      "reactive-property": {
+        "git": "https://github.com/CollectionFS/Meteor-reactive-property.git",
+        "tag": "v0.0.1",
+        "commit": "f742b8656bb88fafff2a9c3a32ff1f97b3ebf2f7"
+      },
+      "micro-queue": {
+        "git": "https://github.com/CollectionFS/Meteor-micro-queue.git",
+        "tag": "v0.0.3",
+        "commit": "70266ce2c273a12c5af17b5c056253936caabb01"
+      },
+      "reactive-list": {
+        "git": "https://github.com/CollectionFS/Meteor-reactive-list.git",
+        "tag": "v0.0.7",
+        "commit": "5855e3795947145b20a331250113ce927060445b"
+      }
+    }
+  }
+}
